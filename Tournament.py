@@ -34,7 +34,6 @@ def predict_tournament(branch_list, start_state):
             else:
                 false_predicts += 1
         branch_count += 1
-        print(branch_count)
     end_time = time.time()
     time_elapsed = (end_time - start_time)
     rt_tournament = ReturnValues(correct_predicts, false_predicts, time_elapsed)
